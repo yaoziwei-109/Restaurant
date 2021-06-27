@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.restaurant.mapper.FoodMapper">
+
+    <select id="getFoodByFoodId" resultType="com.example.restaurant.bean.Food">
+        SELECT *
+        FROM food
+        WHERE food_id=#{foodId};
+    </select>
+
+    <update id="updateNumber" >
+        update food
+        SET food_number=food_number-#{number},version=version+1
+        WHERE food_id=#{foodId}
+              AND version=#{version};
+    </update>
+
+</mapper>

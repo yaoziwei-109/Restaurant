@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=“http://www.thymeleaf.org”>
+
+<head>
+  <div th:replace="common :: #head"/>
+  <style>
+    .aligncenter {
+      clear: both;
+      display: block;
+      margin:auto;
+      width: 100px;
+      height: 100px;
+      }
+
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div th:replace="common :: #accordionSidebar"/>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <div th:replace="common :: #topheader"/>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- banana -->
+            <div class="col-md-4  mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-md font-weight-bold text-primary text-uppercase mb-1">香蕉</div>
+                      <div class="text-md mb-0 font-weight-bold text-gray-800 mt-3">剩余:
+                         <span></span>
+                      </div>
+                    </div>
+                    <img src="/food/123.jpg" class="aligncenter">
+                  </div>
+                    <button class="mt-3 btn btn-facebook btn-block"  id="123" >添加到结算清单</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4  mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-md font-weight-bold text-primary text-uppercase mb-1">苹果</div>
+                      <div class="text-md mb-0 font-weight-bold text-gray-800 mt-3">剩余:
+                        <span></span>
+                      </div>
+                    </div>
+                    <img src="/food/1234.jpg" class="aligncenter">
+                  </div>
+                  <button class="mt-3 btn btn-facebook btn-block"  id="1234" >添加到结算清单</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4  mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-md font-weight-bold text-primary text-uppercase mb-1">孜然牛肉</div>
+                      <div class="text-md mb-0 font-weight-bold text-gray-800 mt-3">剩余:
+                        <span></span>
+                      </div>
+                    </div>
+                    <img src="/food/1.jpg" class="aligncenter">
+                  </div>
+                  <button class="mt-3 btn btn-facebook btn-block"  id="1" >添加到结算清单</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4  mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-md font-weight-bold text-primary text-uppercase mb-1">红烧茄子</div>
+                      <div class="text-md mb-0 font-weight-bold text-gray-800 mt-3">剩余:
+                        <span></span>
+                      </div>
+                    </div>
+                    <img src="/food/2.jpg" class="aligncenter">
+                  </div>
+                  <button class="mt-3 btn btn-facebook btn-block"  id="2" >添加到结算清单</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4  mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-md font-weight-bold text-primary text-uppercase mb-1">梅菜扣肉</div>
+                      <div class="text-md mb-0 font-weight-bold text-gray-800 mt-3">剩余:
+                        <span></span>
+                      </div>
+                    </div>
+                    <img src="/food/3.jpg" class="aligncenter">
+                  </div>
+                  <button class="mt-3 btn btn-facebook btn-block"  id="3" >添加到结算清单</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4  mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-md font-weight-bold text-primary text-uppercase mb-1">米饭</div>
+                      <div class="text-md mb-0 font-weight-bold text-gray-800 mt-3">剩余:
+                        <span></span>
+                      </div>
+                    </div>
+                    <img src="/food/4.jpg" class="aligncenter">
+                  </div>
+                  <button class="mt-3 btn btn-facebook btn-block"  id="4" >添加到结算清单</button>
+                </div>
+              </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+
+
+
+  </div>
+  <div th:replace="common :: #script"/>
+  <script src="/js/ssi.js"></script>
+  <script  src="/js/index.js?t=2021622">  </script>
+</body>
+
+</html>

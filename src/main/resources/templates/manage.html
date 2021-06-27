@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=“http://www.thymeleaf.org” xmlns:vertical-align="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <div th:replace="common :: #head"/>
+  <style>
+    .aligncenter {
+      clear: both;
+      display: block;
+      margin:auto;
+      width: 100px;
+      height: 100px;
+      }
+      .mbutton{
+      width: 40px;
+      height: 40px;
+    }
+    .mid{
+          position: absolute;
+        left:50%;
+        top:50%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div th:replace="common :: #accordionSidebar"/>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <div th:replace="common :: #topheader"/>
+        <!-- End of Topbar -->
+
+
+        <!-- Begin Page Content -->
+        <div class="container">
+
+          <div id="parent" class="row">
+
+
+          </div>
+          <div class=" card border-left-success col-lg-6 ">
+            <p class="m-3" >总价为<span id="prices">0</span></p>
+            <button id="submit" class="ml-3 mr-3  mb-3 btn btn-success  " >提交</button>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+
+
+  <div th:replace="common :: #script"/>
+  <script  src="/js/manage.js?t=2021623">  </script>
+
+
+
+
+
+</body>
+
+</html>

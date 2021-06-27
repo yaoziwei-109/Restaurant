@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.restaurant.mapper.UserMapper">
+
+    <select id="getuser" resultType="com.example.restaurant.bean.User">
+        SELECT *
+        FROM user
+        WHERE user_name = #{username}
+    </select>
+
+    <select id="GetUserByName" resultType="com.example.restaurant.bean.User">
+        SELECT *
+        FROM user
+        WHERE user_name = #{name}
+    </select>
+
+    <insert id="addUser">
+        INSERT
+        INTO user(user_id,user_name,user_password,user_address,user_telephone)
+        VALUES (null,#{username},#{password},null,null)
+    </insert>
+
+    <update id="updateUser">
+        UPDATE user
+        SET user_password=#{password},user_address=#{address},user_telephone=#{telephone}
+        WHERE user_id=#{id}
+    </update>
+
+
+</mapper>

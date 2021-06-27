@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=“http://www.thymeleaf.org”>
+
+<head>
+
+  <div th:replace="common :: #head"/>
+  <style>
+  .aligncenter {
+  display: block;
+  width: 50px;
+  height: 50px;
+  }
+  .tabs {
+     float: right;
+}
+   </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div th:replace="common :: #accordionSidebar"/>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <div th:replace="common :: #topheader"/>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div id="parent">
+
+          <div class="col-lg-5 p-5 card m-4 border-left-info" >
+            <form  class="user" >
+              <div class="form-group">
+                <input style="color : black" id="address"  name="address" type="text" class="form-control "  placeholder="地址">
+              </div>
+              <div class="form-group">
+                <input style="color : black" id="telephone" name="telephone" type="text" class="form-control "  placeholder="电话">
+              </div>
+              <input  id="submit" type="button"  value="提交" class="btn btn-success  btn-block">
+            </form>
+
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+
+
+
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
+  <div th:replace="common :: #script"/>
+  <script  src="/js/info.js?t=2021624">  </script>
+</body>
+
+</html>
